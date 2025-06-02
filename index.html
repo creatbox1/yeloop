@@ -1,17 +1,24 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kinzoo Claim</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <button id="connectButton">Connect Wallet</button>
-  <p>Wallet: <span id="walletAddressSpan">Not connected</span></p>
-  <p>Token Balance: <span id="tokenBalanceSpan">0</span></p>
-  <button id="claimButton" disabled>Claim $KINZ</button>
-  <p id="status">Status: Waiting</p>
-  <a id="shareLink" href="#" target="_blank">Share on Twitter</a>
+  <div class="container">
+    <h1>$KINZ Claim Portal</h1>
+    <p class="description">Claim your random 500–1500 $KINZ tokens.<br>Only once per wallet. Claim cost: 0.00008 ETH</p>
+    <button id="connectButton">🔌 Connect Wallet</button>
+    <div id="walletInfo">
+      <p><strong>Wallet:</strong> <span id="walletAddress">Not connected</span></p>
+    </div>
+    <button id="claimButton" disabled>🎁 Claim $KINZ</button>
+    <p id="statusMessage">Status: Not connected</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
